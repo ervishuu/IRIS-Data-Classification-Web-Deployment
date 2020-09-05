@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+Home page
+{% endblock %}
+
+{% block body %}
+
+<form class="myform" action="/predict" method="POST">
+  <h5>Sepal length:</h5>
+  <input name="sl" type="number" step="any" min="0" max="9">
+  <h5>Sepal width:</h5>
+  <input name="sw" type="number" step="any" min="0" max="9">
+  <h5>Petal length:</h5>
+  <input name="pl" type="number" step="any" min="0" max="9">
+  <h5>Petal width:</h5>
+  <input name="pw" type="number" step="any" min="0" max="9">
+  <button class="btn" type="submit">Submit</button>
+  {% if data:%}
+  <h4 style="color:{{data[1]}}">
+    {{data[0]}}
+  </h4>
+  {% endif %}
+
+</form>
+
+<br>
+<center>
+    <p style="font-size:13px;"> Designed By </p>
+</center>
+
+<center>
+    <p style="font-size:16px;">  2020&#10084;&#65039; @er_vishuu_vi__jaya </p>
+</center>
+
+  {% endblock %}

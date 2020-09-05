@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+About page
+{% endblock %}
+
+{% block body %}
+
+<h5><b>&nbsp;Problem : </b></h5>
+<p style="font-size:18px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Train a model to distinguish between different species of the Iris flower based on four measurements (features): sepal length, sepal width, petal length, and petal width.</p>
+
+
+<h5><b>&nbsp;Context:  </b></h5>
+<p style="font-size:18px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Iris classification dataset is famous in the world of machine learning.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dating back to R.A. Fisher’s 1936 paper, “The Use of Multiple Measurements in Taxonomic Problems,” the Iris dataset has long been used for introductory machine learning development.</p>
+
+<h5><b>&nbsp;Model Type : </b></h5>
+<p style="font-size:18px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Naive Bayes classifier With 98.02% Accuracy </p>
+
+<h5><b>&nbsp;What we did : </b></h5>
+<p style="font-size:18px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We built, trained, and deployed a machine learning model using a multiclass classification algorithm.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In looking at the Iris Dataset, the patterns that I
+wanted to draw from the dataset are related to
+how the three types of classes of Iris differ.<br>&nbsp;&nbsp;&nbsp;&nbsp; I
+wanted to see how the classes of Iris-Setosa, IrisVersicolor and Iris-Virginica related to each
+other when compared with their commons
+dimensions of Sepal Length, Sepal Width, Petal
+<br>&nbsp;&nbsp;&nbsp;&nbsp; Length and Petal Width. On an Iris, the sepal is
+larger,lower petal and the petal is the upper
+petal.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the demo below, adjust the size of the sepals and petals and then click “Predict” to test out the model. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The model will predict the flower species based on the inputs you select. </p>
+
+<br>
+<br>
+<br>
+<center>
+<img src="{{url_for('static', filename='flower.png')}}" alt="flower" width="600" height="300">
+</center>
+<br>
+<center>
+    <p style="font-size:13px;"> Designed By </p>
+</center>
+<center>
+    <p style="font-size:16px;">  2020&#10084;&#65039; @er_vishuu_vi__jaya </p>
+</center>
+    {% endblock %}
